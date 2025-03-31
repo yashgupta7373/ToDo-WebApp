@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/favikon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>To Do</title>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="head">
+                <img src="assets/favikon.png" alt="">
+                <h1>To Do</h1>
+            </div>
+            <div class="mode">
+                <!-- <label><input type="color" title="Color Theme"></label> -->
+                <i class="fa-solid" id="theme"></i>
+            </div>
+            <div class="add">
+                <label for="task">
+                    <input type="text" id="task" placeholder="Enter a new task" title="Enter your task here" required/>
+                </label>
+                <button onclick="addTask()">Add Task</button>
+                <button onclick="dltAll()">Delete All</button>
+            </div>
+            <div class="filter">
+                <label><input type="search" id="search" placeholder="🔎 Search Task" title="search"></label>
+                <button class="allBtn">All</button>
+                <button class="favBtn">Favorite</button>
+                <button class="cmptBtn" onclick="">Completed</button>
+                <button class="unCmptBtn">UnCompleted</button>
+            </div>
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <ul id="taskList">
+                <!-- <li>
+                    <span class="completed">
+                        Shopping
+                    </span>
+                    <div class="action">
+                        <i class="fa-solid fa-star"></i>
+                        <button class="cmpt">Undo</button>
+                        <i class="fa-solid fa-pen-to-square edit"></i>
+                        <i class="fa-solid fa-trash delete"></i>
+                    </div>
+                </li> -->
+            </ul>
+            <div class="record">
+                <p>Total: <span id="totalTask">0</span></p>
+                <p>Completed: <span id="cmptTask">0</span></p>
+                <p>Favorites: <span id="favTask">0</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Made with ❤️ YashGupta</div>
+    <script src="script.js"></script>
+</body>
+</html>
