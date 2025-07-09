@@ -39,3 +39,13 @@ This project was built to practice and showcase skills in:
 - Responsive Web Design  
 - Light/Dark theme toggle  
 - Clean code structure
+
+## 🚀 How to Use (Clone & Run)
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/yashgupta7373/ToDo-WebApp.git
+2. Open index.html in your browser
+   No build tools or dependencies needed – it's a fully static app!
+
+Made with ❤️ by Yash Gupta
